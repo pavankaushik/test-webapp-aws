@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.body_class{ 
+    background-color: white
+}
+.header{
+    text-align: center;
+    border: 2px solid;
+    box-shadow: 3px 3px 3px;
+    background-color: #ffee93;
+}
+.heading{
+    color: rgb(134, 163, 206)
+}
+.home_div{
+    position: inherit;
+}
+.footer{
+    border: 2px solid;
+    padding: 10px;
+    background-color: #ffee93;
+    margin-top: 240px;
+    height: 50px;
+    text-align: center;
+}
+.my_div_1 {
+border: 1px solid black;
+margin-top: 20px;
+margin-left: 40px;
+padding: 50px;
+width: 800px;
+margin-left: 10px auto;
+background-color: #fcf5c7;
+position:relative;
+box-shadow: 15px 15px 10px;
+border-radius: 10px;
+
+}
+.my_div_2 {
+border: 2px solid green;
+margin-top: 100px;
+padding: 50px;
+width: 150px;
+text-align: center;
+margin-left: 75%;
+background-color: white;
+position: absolute;
+top: 10px;
+background-color: #adf7b6;
+box-shadow: 10px 15px 10px;
+}
+
+.button_class{
+    border: 1px solid green;
+    background-color: #79addc;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 150px;
+    font-size: small;
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+</style>
+<body class="body_class">
+    <div class="header">
+        <h1 class="heading">Get News !</h1>
+    </div>
+    <div class="home_div">
+        <div class="my_div_1">
+            <p style="font-size:xx-large;text-decoration:underline">Title : {{ title }}</p>
+            <p>Author : {{ author }} | Date & Time : {{ data }}</p>
+            <p style="font-size:larger">Description : {{ description }}</p>
+            <a href={{ url }}>Go to Source</a>
+        </div>
+        <div class="my_div_2">
+            <form method="post" action="/">
+                <input class=button_class type="submit" name="name" value="technology"><br><br>
+                <input class=button_class type="submit" name="name" value="science"><br><br>
+                <input class=button_class type="submit" name="name" value="movies"><br><br>
+                <input class=button_class type="submit" name="name" value="business"><br><br>
+                <input class=button_class type="submit" name="name" value="sports"><br><br>
+                <input class=button_class type="submit" name="name" value="startup"><br><br>
+            </form>
+        </div>
+    <div class="footer">
+         <p style="color:black">@Aduri Pavan Kaushik</p>
+    </div>
+</body>
+</html>
