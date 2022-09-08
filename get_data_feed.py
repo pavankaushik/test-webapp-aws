@@ -7,7 +7,7 @@ def get_feed_from_inshorts(category=None):
     end point and parses the html content and
     builds a json object to send it to elasticsearch
     Args: None
-    Returns : json dict with technology news details
+    Returns : json dict with selected category news details
     """
     #print(category)
     data_dict = {}
